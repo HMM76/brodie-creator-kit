@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Brodie creator program — Penn</title>
+<style>
+  @font-face { font-family: 'Archivo'; src: url('file:///Users/imashkoksal/Downloads/brodie-carousel-engine-main/assets/fonts/Archivo.ttf') format('truetype'); font-weight: 100 900; font-stretch: 62% 125%; }
+  @font-face { font-family: 'Plus Jakarta Sans'; src: url('file:///Users/imashkoksal/Downloads/brodie-carousel-engine-main/assets/fonts/PlusJakartaSans.ttf') format('truetype'); font-weight: 200 800; }
+  @page { size: Letter; margin: 0; }
+  * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  html, body { margin: 0; padding: 0; background: #0a0a0b; color: #fff; height: 11in; overflow: hidden; }
+  body { width: 8.5in; height: 11in; overflow: hidden; font-family: 'Plus Jakarta Sans', -apple-system, 'Helvetica Neue', Arial, sans-serif; font-size: 10.5pt; line-height: 1.45; }
+  .page { position: relative; width: 8.5in; height: 11in; overflow: hidden; padding: 0.5in 0.6in 0.45in 0.6in; display: flex; flex-direction: column; }
+  .top { display: flex; justify-content: space-between; align-items: center; }
+  .wordmark { font-weight: 800; font-size: 15pt; letter-spacing: 0.5px; }
+  .pill { font-size: 8pt; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #8e9198; border: 1.5px solid #3c3e44; border-radius: 999px; padding: 5px 12px; }
+  h1 { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-stretch: 100%; text-transform: uppercase; font-size: 37pt; line-height: 0.95; letter-spacing: -1.3pt; margin: 0.28in 0 0 0; }
+  h1 .acid { color: #d9ff3d; }
+  .lead { color: #8e9198; font-size: 10.5pt; line-height: 1.5; margin: 0.14in 0 0 0; max-width: 6.4in; }
+  .lead b { color: #fff; font-weight: 700; }
+  .stats { display: flex; margin-top: 0.2in; background: #1f2126; border: 1px solid #2a2c32; border-radius: 16px; }
+  .stat { flex: 1; text-align: center; padding: 11px 8px 10px; }
+  .stat + .stat { border-left: 1px solid #2a2c32; }
+  .stat .n { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-size: 26pt; line-height: 1; letter-spacing: -1pt; }
+  .stat .n.acid { color: #d9ff3d; }
+  .stat .l { color: #8e9198; font-size: 8.5pt; line-height: 1.3; margin-top: 5px; }
+  .cols { display: flex; gap: 0.3in; margin-top: 0.2in; }
+  .col { flex: 1; }
+  .k { font-size: 8pt; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8e9198; margin-bottom: 4px; }
+  .rows div { padding: 6px 0; border-bottom: 1px solid #222327; font-size: 10pt; line-height: 1.35; }
+  .rows div:last-child { border-bottom: 0; }
+  .rows b { color: #fff; }
+  .proof { margin-top: 0.18in; }
+  .people { display: flex; gap: 10px; margin-top: 6px; }
+  .person { flex: 1; background: #16171a; border: 1px solid #222327; border-radius: 12px; padding: 9px 10px; }
+  .person .n { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-size: 15pt; letter-spacing: -0.5pt; line-height: 1.1; }
+  .person .w { font-size: 9pt; font-weight: 700; margin-top: 3px; }
+  .person .c { font-size: 8pt; color: #8e9198; line-height: 1.3; margin-top: 1px; }
+  .reach { margin-top: 0.16in; display: flex; gap: 14px; align-items: center; border: 1px solid #2a2c32; border-radius: 14px; padding: 12px 14px; }
+  .reach .t { font-size: 10pt; line-height: 1.4; }
+  .reach .t b { color: #fff; }
+  .reach .t span { color: #8e9198; }
+  .cta { margin-top: auto; display: flex; align-items: center; gap: 16px; padding-top: 0.16in; border-top: 1px solid #222327; }
+  .btn { background: #d9ff3d; color: #0a0a0b; font-weight: 800; font-size: 11pt; border-radius: 999px; padding: 12px 22px; white-space: nowrap; }
+  .cta .t { font-size: 10pt; line-height: 1.4; }
+  .cta .t span { color: #8e9198; }
+  .cta .url { margin-left: auto; color: #d9ff3d; font-weight: 700; font-size: 10pt; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="top">
+    <div class="wordmark">BRODIE</div>
+    <div class="pill">Built by Penn students</div>
+  </div>
+
+  <h1>Make your first money<br><span class="acid">making content.</span></h1>
+
+  <p class="lead">We're Penn students building <b>brodie</b>, a personal trainer that lives in your texts. We work with a top-5 UFC fighter and creators with 100k+ followers, and we need people to shoot and cut with them. <b>No professional experience needed.</b> Paid per piece.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="n acid">#5</div><div class="l">ranked UFC flyweight<br>on the roster</div></div>
+    <div class="stat"><div class="n">100k+</div><div class="l">followers per creator<br>you'd shoot with</div></div>
+    <div class="stat"><div class="n">2,000+</div><div class="l">lifters, trainers and pros<br>already on brodie</div></div>
+  </div>
+
+  <div class="cols">
+    <div class="col">
+      <div class="k">What you'd do</div>
+      <div class="rows">
+        <div><b>Shoot</b> with athletes and creators: gym sessions, fight camp, day-in-the-life.</div>
+        <div><b>Cut</b> short-form for Instagram and TikTok: the hook, the first three seconds.</div>
+        <div><b>Write</b> hooks and captions in the creator's voice.</div>
+        <div><b>Show up</b> on time with a phone that shoots 4K. That's the whole bar.</div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="k">What you get</div>
+      <div class="rows">
+        <div><b>Paid per published piece.</b> For most people, the first money they've made from content.</div>
+        <div><b>Real numbers</b> on accounts that already have reach, not a test account.</div>
+        <div><b>Real names</b> on your resume: a UFC fighter, 100k+ creators, a funded startup.</div>
+        <div><b>A brief and feedback</b> on every piece, so you improve every week.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="proof">
+    <div class="k">Penn people did this</div>
+    <div class="people">
+      <div class="person"><div class="n">3.6M</div><div class="w">Andy Jiang, W '25</div><div class="c">TikTok. Started from a $20 bet in quarantine.</div></div>
+      <div class="person"><div class="n">4.2M</div><div class="w">Noah Schnapp, '26</div><div class="c">YouTube. Graduated from Penn this year.</div></div>
+      <div class="person"><div class="n">90k</div><div class="w">Domonique Malcolm, C '22</div><div class="c">YouTube. Content got her the job after.</div></div>
+      <div class="person"><div class="n">25k</div><div class="w">Jack Rogers, C '26</div><div class="c">TikTok, 5M likes. First sponsorship while at Penn.</div></div>
+    </div>
+  </div>
+
+  <div class="reach">
+    <div class="t"><b>REACH at Penn</b>, the student creator club: 50–100 members, four committees. <span>Proposal: one paid content day with a UFC fighter and a 100k+ creator for the Personal Content Creation committee. Contact Melinda Mei, upennreach@gmail.com.</span></div>
+  </div>
+
+  <div class="cta">
+    <div class="btn">reply with one thing you made</div>
+    <div class="t">A reel, a TikTok, a photo, a meme.<br><span>We reply to everyone. First six get the first shoot date.</span></div>
+    <div class="url">getbrodie.com</div>
+  </div>
+
+</div>
+</body>
+</html>
