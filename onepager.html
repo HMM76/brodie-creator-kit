@@ -21,7 +21,7 @@
   .hero { display: flex; gap: 0.35in; margin-top: 0.42in; position: relative; flex: 1; }
   .left { flex: 1.15; display: flex; flex-direction: column; }
   .right { flex: 0.85; position: relative; }
-  .right img { position: absolute; right: -0.12in; top: -0.08in; width: 3.1in; filter: drop-shadow(0 24px 40px rgba(0,0,0,0.55)); }
+  .right img { position: absolute; right: -0.1in; top: -0.1in; width: 2.95in; filter: drop-shadow(0 24px 40px rgba(0,0,0,0.55)); }
   h1 { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; text-transform: uppercase; font-size: 41pt; line-height: 0.93; letter-spacing: -1.7pt; margin: 0; }
   h1 .acid { color: #d9ff3d; }
   .sub { color: #8e9198; font-size: 11pt; line-height: 1.5; margin: 0.28in 0 0 0; max-width: 3.9in; }
@@ -41,7 +41,9 @@
   .reach .t b { color: #fff; }
   .foot { display: flex; justify-content: space-between; align-items: center; padding-top: 0.14in; margin-top: 0.22in; border-top: 1px solid #222327; font-size: 9pt; color: #8e9198; position: relative; }
   .foot .url { color: #d9ff3d; font-weight: 700; font-size: 10pt; }
-  .mascot { position: absolute; right: 0.45in; bottom: -0.02in; width: 1.75in; z-index: 3; }
+  .mascot { position: absolute; right: 0.35in; bottom: -0.04in; width: 2.15in; z-index: 3; }
+  .bubble { position: absolute; right: 2.5in; bottom: 2.15in; z-index: 4; background: #d9ff3d; color: #0a0a0b; font-weight: 800; font-size: 11pt; line-height: 1.25; padding: 12px 16px; border-radius: 18px; border-bottom-right-radius: 4px; white-space: nowrap; }
+  .bubble:after { content: ''; position: absolute; right: -9px; bottom: 2px; width: 0; height: 0; border-left: 12px solid #d9ff3d; border-top: 10px solid transparent; }
 </style>
 </head>
 <body>
@@ -82,6 +84,7 @@
     </div>
   </div>
 
+  <div class="bubble">film it. post it.<br>get paid.</div>
   <img class="mascot" src="gfx/mascot_v2.png" alt="">
 
   <div class="foot">
