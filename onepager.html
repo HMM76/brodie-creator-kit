@@ -10,46 +10,37 @@
   * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   html, body { margin: 0; padding: 0; background: #0a0a0b; color: #fff; height: 11in; overflow: hidden; }
   body { width: 8.5in; font-family: 'Plus Jakarta Sans', -apple-system, 'Helvetica Neue', Arial, sans-serif; font-size: 10.5pt; line-height: 1.45; }
-  .page { position: relative; width: 8.5in; height: 11in; overflow: hidden; padding: 0.5in 0.6in 0.45in 0.6in; display: flex; flex-direction: column; }
+  .page { position: relative; width: 8.5in; height: 11in; overflow: hidden; padding: 0.55in 0.65in 0.5in 0.65in; display: flex; flex-direction: column; }
   .top { display: flex; justify-content: space-between; align-items: center; }
   .wordmark { font-weight: 800; font-size: 15pt; letter-spacing: 0.5px; }
   .wordmark span { color: #8e9198; font-weight: 600; font-size: 11pt; margin-left: 10px; letter-spacing: 0; }
   .pill { font-size: 8pt; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #8e9198; border: 1.5px solid #3c3e44; border-radius: 999px; padding: 5px 12px; }
-  h1 { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; text-transform: uppercase; font-size: 32pt; line-height: 0.95; letter-spacing: -1.1pt; margin: 0.22in 0 0 0; }
+  h1 { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; text-transform: uppercase; font-size: 34pt; line-height: 0.95; letter-spacing: -1.2pt; margin: 0.3in 0 0 0; }
   h1 .acid { color: #d9ff3d; }
-  .lead { color: #8e9198; font-size: 10pt; line-height: 1.45; margin: 0.12in 0 0 0; max-width: 6.8in; }
+  .lead { color: #8e9198; font-size: 11pt; line-height: 1.48; margin: 0.16in 0 0 0; max-width: 6.9in; }
   .lead b { color: #fff; font-weight: 700; }
-  .stats { display: flex; margin-top: 0.15in; background: #1f2126; border: 1px solid #2a2c32; border-radius: 16px; }
-  .stat { flex: 1; text-align: center; padding: 9px 8px 8px; }
+  .stats { display: flex; margin-top: 0.24in; background: #1f2126; border: 1px solid #2a2c32; border-radius: 16px; }
+  .stat { flex: 1; text-align: center; padding: 13px 8px 12px; }
   .stat + .stat { border-left: 1px solid #2a2c32; }
-  .stat .n { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-size: 24pt; line-height: 1; letter-spacing: -1pt; }
+  .stat .n { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-size: 26pt; line-height: 1; letter-spacing: -1pt; }
   .stat .n.acid { color: #d9ff3d; }
-  .stat .l { color: #8e9198; font-size: 8.5pt; line-height: 1.3; margin-top: 5px; }
-  .k { font-size: 8pt; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8e9198; margin-bottom: 4px; }
-  .steps { display: flex; gap: 10px; margin-top: 0.15in; }
-  .step { flex: 1; background: #16171a; border: 1px solid #222327; border-radius: 12px; padding: 8px 10px 9px; }
-  .step .num { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-size: 16pt; color: #d9ff3d; line-height: 1; }
-  .step .t { font-weight: 700; font-size: 9.5pt; margin-top: 6px; line-height: 1.25; }
-  .step .c { color: #8e9198; font-size: 8.5pt; line-height: 1.35; margin-top: 3px; }
-  .cols { display: flex; gap: 0.3in; margin-top: 0.15in; }
+  .stat .l { color: #8e9198; font-size: 9pt; line-height: 1.3; margin-top: 6px; }
+  .k { font-size: 8pt; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8e9198; margin-bottom: 6px; }
+  .steps { display: flex; gap: 12px; margin-top: 0.24in; }
+  .step { flex: 1; background: #16171a; border: 1px solid #222327; border-radius: 14px; padding: 11px 12px 12px; }
+  .step .num { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-size: 17pt; color: #d9ff3d; line-height: 1; }
+  .step .t { font-weight: 700; font-size: 10pt; margin-top: 8px; line-height: 1.25; }
+  .step .c { color: #8e9198; font-size: 9pt; line-height: 1.38; margin-top: 4px; }
+  .cols { display: flex; gap: 0.35in; margin-top: 0.26in; }
   .col { flex: 1; }
-  .rows div { padding: 5px 0; border-bottom: 1px solid #222327; font-size: 9.5pt; line-height: 1.32; }
+  .rows div { padding: 7px 0; border-bottom: 1px solid #222327; font-size: 10.2pt; line-height: 1.38; }
   .rows div:last-child { border-bottom: 0; }
   .rows b { color: #fff; }
-  .proof { margin-top: 0.13in; }
-  .people { display: flex; gap: 10px; margin-top: 6px; }
-  .person { flex: 1; background: #16171a; border: 1px solid #222327; border-radius: 12px; padding: 7px 10px; }
-  .person .n { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-size: 14pt; letter-spacing: -0.5pt; line-height: 1.1; }
-  .person .w { font-size: 8.5pt; font-weight: 700; margin-top: 3px; }
-  .person .c { font-size: 8pt; color: #8e9198; line-height: 1.3; margin-top: 1px; }
-  .reach { margin-top: 0.13in; border: 1px solid #d9ff3d; border-radius: 14px; padding: 9px 14px; font-size: 9.5pt; line-height: 1.38; }
+  .reach { margin-top: 0.26in; border: 1px solid #d9ff3d; border-radius: 14px; padding: 12px 16px; font-size: 10.2pt; line-height: 1.42; }
   .reach b { color: #d9ff3d; }
   .reach span { color: #8e9198; }
-  .cta { margin-top: auto; display: flex; align-items: center; gap: 16px; padding-top: 0.12in; border-top: 1px solid #222327; }
-  .btn { background: #d9ff3d; color: #0a0a0b; font-weight: 800; font-size: 10.5pt; border-radius: 999px; padding: 11px 20px; white-space: nowrap; }
-  .cta .t { font-size: 9.5pt; line-height: 1.4; }
-  .cta .t span { color: #8e9198; }
-  .cta .url { margin-left: auto; color: #d9ff3d; font-weight: 700; font-size: 10pt; }
+  .foot { margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 0.14in; border-top: 1px solid #222327; font-size: 9.5pt; color: #8e9198; }
+  .foot .url { color: #d9ff3d; font-weight: 700; font-size: 10.5pt; }
 </style>
 </head>
 <body>
@@ -62,11 +53,11 @@
 
   <h1>Get paid to make content<br><span class="acid">for a Penn-alum startup.</span></h1>
 
-  <p class="lead"><b>brodie</b> is a personal trainer that lives in your texts, founded by Penn alumni and used by Olympic athletes and UFC fighters. We're running a UGC program with REACH: Penn students make short-form content for the brand and get paid directly, <b>a base per piece plus bonuses on views</b>, with real experience creating for a company with real athletes.</p>
+  <p class="lead"><b>brodie</b> is a personal trainer that lives in your texts, founded by Penn alumni. We work with the <b>#5 ranked UFC flyweight in the world</b>, Olympic athletes, and influencers with <b>hundreds of thousands of followers</b>. We're running a UGC program with REACH: Penn students make short-form content for the brand and get paid directly, <b>a base per piece plus bonuses on views</b>, with real experience creating for a company with real athletes.</p>
 
   <div class="stats">
     <div class="stat"><div class="n acid">#5</div><div class="l">ranked UFC flyweight<br>training with brodie</div></div>
-    <div class="stat"><div class="n">Olympic</div><div class="l">athletes on the roster<br>you'd create around</div></div>
+    <div class="stat"><div class="n">100k's</div><div class="l">of followers per influencer<br>you'd create around</div></div>
     <div class="stat"><div class="n">2,000+</div><div class="l">lifters, trainers and pros<br>already on brodie</div></div>
   </div>
 
@@ -91,18 +82,8 @@
       <div class="rows">
         <div><b>Money.</b> A base for every published piece, plus bonuses as views climb. Your breakout pays you.</div>
         <div><b>Experience.</b> Briefs, feedback and real performance numbers, every week.</div>
-        <div><b>Names.</b> A funded startup, UFC fighters and Olympic athletes on your resume.</div>
+        <div><b>Names.</b> A funded startup, a top-5 UFC fighter and Olympic athletes on your resume.</div>
       </div>
-    </div>
-  </div>
-
-  <div class="proof">
-    <div class="k">Penn people did this</div>
-    <div class="people">
-      <div class="person"><div class="n">3.6M</div><div class="w">Andy Jiang, W '25</div><div class="c">TikTok. Started from a $20 bet in quarantine.</div></div>
-      <div class="person"><div class="n">4.2M</div><div class="w">Noah Schnapp, '26</div><div class="c">YouTube. Graduated from Penn this year.</div></div>
-      <div class="person"><div class="n">90k</div><div class="w">Domonique Malcolm, C '22</div><div class="c">YouTube. Content got her the job after.</div></div>
-      <div class="person"><div class="n">25k</div><div class="w">Jack Rogers, C '26</div><div class="c">TikTok, 5M likes. First sponsorship at Penn.</div></div>
     </div>
   </div>
 
@@ -110,9 +91,8 @@
     <b>For REACH:</b> we pay your creators directly, a base per published piece plus view bonuses, run with the Personal Content Creation committee. <span>We bring the budget, the brief, the athletes and the product. REACH brings the creators. One 30-minute call to set the first drop.</span>
   </div>
 
-  <div class="cta">
-    <div class="btn">reply with one thing you made</div>
-    <div class="t">A reel, a TikTok, a photo, a meme.<br><span>We reply to everyone. First drop goes to the first twenty.</span></div>
+  <div class="foot">
+    <div>Founded by Penn alumni · Philadelphia</div>
     <div class="url">getbrodie.com</div>
   </div>
 
