@@ -21,8 +21,8 @@
   .hero { display: flex; gap: 0.35in; margin-top: 0.42in; position: relative; flex: 1; }
   .left { flex: 1.15; display: flex; flex-direction: column; }
   .right { flex: 0.85; position: relative; }
-  .right img { position: absolute; right: -0.1in; top: -0.15in; width: 3.45in; filter: drop-shadow(0 30px 50px rgba(0,0,0,0.6)); }
-  h1 { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; text-transform: uppercase; font-size: 44pt; line-height: 0.93; letter-spacing: -1.8pt; margin: 0; }
+  .right img { position: absolute; right: -0.18in; top: -0.1in; width: 3.3in; filter: drop-shadow(0 24px 40px rgba(0,0,0,0.55)); }
+  h1 { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; text-transform: uppercase; font-size: 41pt; line-height: 0.93; letter-spacing: -1.7pt; margin: 0; }
   h1 .acid { color: #d9ff3d; }
   .sub { color: #8e9198; font-size: 11pt; line-height: 1.5; margin: 0.28in 0 0 0; max-width: 3.9in; }
   .sub b { color: #fff; font-weight: 700; }
@@ -41,6 +41,7 @@
   .reach .t b { color: #fff; }
   .foot { display: flex; justify-content: space-between; align-items: center; padding-top: 0.14in; margin-top: 0.22in; border-top: 1px solid #222327; font-size: 9pt; color: #8e9198; position: relative; }
   .foot .url { color: #d9ff3d; font-weight: 700; font-size: 10pt; }
+  .mascot { position: absolute; right: 0.55in; bottom: 0.95in; width: 1.5in; z-index: 3; }
 </style>
 </head>
 <body>
@@ -77,9 +78,11 @@
     </div>
 
     <div class="right">
-      <img src="gfx/phone.png" alt="">
+      <img src="gfx/phone_v2.png" alt="">
     </div>
   </div>
+
+  <img class="mascot" src="gfx/brodie_mascot.png" alt="">
 
   <div class="foot">
     <div>Founded by Penn alumni · Philadelphia</div>
