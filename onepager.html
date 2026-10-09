@@ -10,85 +10,75 @@
   * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   html, body { margin: 0; padding: 0; background: #0a0a0b; color: #fff; height: 11in; overflow: hidden; }
   body { width: 8.5in; font-family: 'Plus Jakarta Sans', -apple-system, 'Helvetica Neue', Arial, sans-serif; font-size: 10.5pt; line-height: 1.45; }
-  .page { position: relative; width: 8.5in; height: 11in; overflow: hidden; padding: 0.55in 0.65in 0.5in 0.65in; display: flex; flex-direction: column; }
-  .top { display: flex; justify-content: space-between; align-items: center; }
+  .page { position: relative; width: 8.5in; height: 11in; overflow: hidden; padding: 0.5in 0.6in 0.45in 0.6in; display: flex; flex-direction: column; }
+  .glow { position: absolute; right: -1.2in; top: 1.4in; width: 5in; height: 5in; border-radius: 50%; background: radial-gradient(circle, rgba(217,255,61,0.16) 0%, rgba(217,255,61,0) 65%); }
+  .top { display: flex; justify-content: space-between; align-items: center; position: relative; }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand img { width: 0.42in; height: 0.42in; border-radius: 50%; }
   .wordmark { font-weight: 800; font-size: 15pt; letter-spacing: 0.5px; }
-  .wordmark span { color: #8e9198; font-weight: 600; font-size: 11pt; margin-left: 10px; letter-spacing: 0; }
+  .wordmark span { color: #8e9198; font-weight: 600; font-size: 11pt; margin-left: 8px; letter-spacing: 0; }
   .pill { font-size: 8pt; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #8e9198; border: 1.5px solid #3c3e44; border-radius: 999px; padding: 5px 12px; }
-  h1 { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; text-transform: uppercase; font-size: 34pt; line-height: 0.95; letter-spacing: -1.2pt; margin: 0.3in 0 0 0; }
+  .hero { display: flex; gap: 0.35in; margin-top: 0.42in; position: relative; flex: 1; }
+  .left { flex: 1.15; display: flex; flex-direction: column; }
+  .right { flex: 0.85; position: relative; }
+  .right img { position: absolute; right: -0.1in; top: -0.15in; width: 3.45in; filter: drop-shadow(0 30px 50px rgba(0,0,0,0.6)); }
+  h1 { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; text-transform: uppercase; font-size: 44pt; line-height: 0.93; letter-spacing: -1.8pt; margin: 0; }
   h1 .acid { color: #d9ff3d; }
-  .lead { color: #8e9198; font-size: 11pt; line-height: 1.48; margin: 0.16in 0 0 0; max-width: 6.9in; }
-  .lead b { color: #fff; font-weight: 700; }
-  .stats { display: flex; margin-top: 0.24in; background: #1f2126; border: 1px solid #2a2c32; border-radius: 16px; }
-  .stat { flex: 1; text-align: center; padding: 13px 8px 12px; }
-  .stat + .stat { border-left: 1px solid #2a2c32; }
-  .stat .n { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-size: 26pt; line-height: 1; letter-spacing: -1pt; }
-  .stat .n.acid { color: #d9ff3d; }
-  .stat .l { color: #8e9198; font-size: 9pt; line-height: 1.3; margin-top: 6px; }
-  .k { font-size: 8pt; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8e9198; margin-bottom: 6px; }
-  .steps { display: flex; gap: 12px; margin-top: 0.24in; }
-  .step { flex: 1; background: #16171a; border: 1px solid #222327; border-radius: 14px; padding: 11px 12px 12px; }
-  .step .num { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-size: 17pt; color: #d9ff3d; line-height: 1; }
-  .step .t { font-weight: 700; font-size: 10pt; margin-top: 8px; line-height: 1.25; }
-  .step .c { color: #8e9198; font-size: 9pt; line-height: 1.38; margin-top: 4px; }
-  .cols { display: flex; gap: 0.35in; margin-top: 0.26in; }
-  .col { flex: 1; }
-  .rows div { padding: 7px 0; border-bottom: 1px solid #222327; font-size: 10.2pt; line-height: 1.38; }
-  .rows div:last-child { border-bottom: 0; }
-  .rows b { color: #fff; }
-  .reach { margin-top: 0.26in; border: 1px solid #d9ff3d; border-radius: 14px; padding: 12px 16px; font-size: 10.2pt; line-height: 1.42; }
-  .reach b { color: #d9ff3d; }
-  .reach span { color: #8e9198; }
-  .foot { margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 0.14in; border-top: 1px solid #222327; font-size: 9.5pt; color: #8e9198; }
-  .foot .url { color: #d9ff3d; font-weight: 700; font-size: 10.5pt; }
+  .sub { color: #8e9198; font-size: 11pt; line-height: 1.5; margin: 0.28in 0 0 0; max-width: 3.9in; }
+  .sub b { color: #fff; font-weight: 700; }
+  .items { margin-top: 0.5in; }
+  .item { display: flex; gap: 14px; align-items: flex-start; padding: 16px 0; border-top: 1px solid #222327; }
+  .item:last-child { border-bottom: 1px solid #222327; }
+  .num { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-size: 20pt; line-height: 1; color: #d9ff3d; width: 0.5in; flex: none; padding-top: 2px; }
+  .item .t { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; text-transform: uppercase; font-size: 15pt; letter-spacing: -0.4pt; line-height: 1.05; }
+  .item .c { color: #8e9198; font-size: 10pt; line-height: 1.4; margin-top: 4px; max-width: 3.4in; }
+  .chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 0.42in; }
+  .chip { border: 1px solid #2a2c32; background: #16171a; border-radius: 999px; padding: 7px 12px; font-size: 8.5pt; font-weight: 700; color: #fff; white-space: nowrap; }
+  .chip span { color: #8e9198; font-weight: 600; }
+  .reach { margin-top: auto; display: flex; align-items: center; gap: 14px; }
+  .reach .b { background: #d9ff3d; color: #0a0a0b; font-weight: 800; font-size: 9.5pt; border-radius: 999px; padding: 10px 16px; white-space: nowrap; }
+  .reach .t { color: #8e9198; font-size: 9.5pt; line-height: 1.4; }
+  .reach .t b { color: #fff; }
+  .foot { display: flex; justify-content: space-between; align-items: center; padding-top: 0.14in; margin-top: 0.22in; border-top: 1px solid #222327; font-size: 9pt; color: #8e9198; position: relative; }
+  .foot .url { color: #d9ff3d; font-weight: 700; font-size: 10pt; }
 </style>
 </head>
 <body>
 <div class="page">
+  <div class="glow"></div>
 
   <div class="top">
-    <div class="wordmark">BRODIE <span>× REACH at Penn</span></div>
+    <div class="brand"><img src="gfx/brodie_avatar.png" alt=""><div class="wordmark">BRODIE <span>× REACH at Penn</span></div></div>
     <div class="pill">Campus UGC program · Fall 2026</div>
   </div>
 
-  <h1>Get paid to make content<br><span class="acid">for a Penn-alum startup.</span></h1>
+  <div class="hero">
+    <div class="left">
+      <h1>Make content<br>for brodie.<br><span class="acid">Get paid.</span></h1>
+      <p class="sub">A Penn-alum fitness startup. Trained with the <b>#5 UFC flyweight in the world</b>, Olympic athletes and creators with <b>hundreds of thousands of followers</b>.</p>
 
-  <p class="lead"><b>brodie</b> is a personal trainer that lives in your texts, founded by Penn alumni. We work with the <b>#5 ranked UFC flyweight in the world</b>, Olympic athletes, and influencers with <b>hundreds of thousands of followers</b>. We're running a UGC program with REACH: Penn students make short-form content for the brand and get paid directly, <b>a base per piece plus bonuses on views</b>, with real experience creating for a company with real athletes.</p>
+      <div class="items">
+        <div class="item"><div class="num">01</div><div><div class="t">Join</div><div class="c">Any REACH member. No portfolio, no experience.</div></div></div>
+        <div class="item"><div class="num">02</div><div><div class="t">Film</div><div class="c">Brodie in your gym, on your phone, in your voice. We send the brief.</div></div></div>
+        <div class="item"><div class="num">03</div><div><div class="t">Get paid</div><div class="c">A base for every piece, plus a bonus as views climb.</div></div></div>
+      </div>
 
-  <div class="stats">
-    <div class="stat"><div class="n acid">#5</div><div class="l">ranked UFC flyweight<br>training with brodie</div></div>
-    <div class="stat"><div class="n">100k's</div><div class="l">of followers per influencer<br>you'd create around</div></div>
-    <div class="stat"><div class="n">2,000+</div><div class="l">lifters, trainers and pros<br>already on brodie</div></div>
-  </div>
+      <div class="chips">
+        <div class="chip">#5 <span>UFC flyweight</span></div>
+        <div class="chip">Olympic <span>athletes</span></div>
+        <div class="chip">100k's <span>of followers</span></div>
+        <div class="chip">2,000+ <span>lifters on brodie</span></div>
+      </div>
 
-  <div class="steps">
-    <div class="step"><div class="num">01</div><div class="t">Join through REACH</div><div class="c">Open to every member. No portfolio, no experience needed.</div></div>
-    <div class="step"><div class="num">02</div><div class="t">Get the brief and the app</div><div class="c">Free brodie access, a one-page brief, the formats we're testing.</div></div>
-    <div class="step"><div class="num">03</div><div class="t">Film it your way</div><div class="c">Your gym, your room, your voice, your phone. Post it or send it.</div></div>
-    <div class="step"><div class="num">04</div><div class="t">Get paid, see the numbers</div><div class="c">Base per published piece, bonus on views. We share what worked and why.</div></div>
-  </div>
-
-  <div class="cols">
-    <div class="col">
-      <div class="k">Why we're doing it</div>
-      <div class="rows">
-        <div><b>Volume finds the hits.</b> Short-form is a power law: one video in many breaks out. More creators, more shots, more breakouts.</div>
-        <div><b>Formats get tested at scale.</b> Twenty students trying twenty angles beats one editor guessing.</div>
-        <div><b>Students are the audience.</b> Content made by lifters at Pottruck lands with lifters everywhere.</div>
+      <div class="reach">
+        <div class="b">For REACH</div>
+        <div class="t"><b>Creators paid directly.</b> One 30-minute call sets the first drop.</div>
       </div>
     </div>
-    <div class="col">
-      <div class="k">What you get</div>
-      <div class="rows">
-        <div><b>Money.</b> A base for every published piece, plus bonuses as views climb. Your breakout pays you.</div>
-        <div><b>Experience.</b> Briefs, feedback and real performance numbers, every week.</div>
-        <div><b>Names.</b> A funded startup, a top-5 UFC fighter and Olympic athletes on your resume.</div>
-      </div>
-    </div>
-  </div>
 
-  <div class="reach">
-    <b>For REACH:</b> we pay your creators directly, a base per published piece plus view bonuses, run with the Personal Content Creation committee. <span>We bring the budget, the brief, the athletes and the product. REACH brings the creators. One 30-minute call to set the first drop.</span>
+    <div class="right">
+      <img src="gfx/phone.png" alt="">
+    </div>
   </div>
 
   <div class="foot">
